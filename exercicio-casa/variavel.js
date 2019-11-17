@@ -64,7 +64,7 @@
 
 
 /*  
-    7. Crie uma constante A que armazene um valor de 20 e troque o valor de A para 50.
+    7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.
 
     Responda:
     Essa operação funcionou ? justifique

@@ -1,60 +1,64 @@
 /*  
-     Usando o console do seu navegador ou terminal, apresente as informações das variaveis citadas abaixo:
+    1. Usando o console do seu navegador ou terminal, apresente as informações das variaveis citadas abaixo:
 
-    Nome, idade, data de nascimento, nacionalidade
+        Nome, idade, ano de nascimento, nacionalidade
 
-    lembrando que para executar o camando, deve ser exatamente como no exemplo:
-
-    let IDENTIFICADOR = ATRIBUTO
-
-    let nome = "Isabela";
-
+        Dica:
+        let IDENTIFICADOR = ATRIBUTO
 */
+        let nome = "Isabela";
+        let idade = 25;
+        let anoDeNascimento = 1992;
+        let nacionalidade = "Brasileira"
 
-/*  
-     Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a ela:
 
-    Nome, idade, data de nascimento, nacionalidade
+/*
+    2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a ela:
 
-    lembrando que para executar o camando, deve ser exatamente como no exemplo:
-
+    Dica:
     IDENTIFICADOR = ATRIBUTO
-    
+
+    obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel duas vezes.
+*/
     nome = "Maria";
+    idade = 40;
+    anoDeNascimento = 1975;
+    nacionalidade = "Francesa";
 
-    obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
 
+/*
+    3.  Escreva uma variavel A que armazene o valor de 50 e valor de 20 em uma variavel B.
+        Armazene na variavel C  o valor de A  + valor de B
+        Mostre o valor de A, B e C
 */
 
+        let A = 50;
+        let B = 20;
+        let C = A + B;
+        console.log(A,B,C); // 50 20 70
 
-/*  
-    Escreva uma variavel A que armazene o valor de 50 e valor de 20 em uma variavel B. 
-    Armazene na variavel C  o valor de A  + valor de B
-    Mostre o valor de A, B e C
-    
-    Para mostrar utilize o console.log()
 
+/*
+    4.  Criar uma constante A que armazene um valor de 20 e  troque o valor de A para 50.
+        Responda:
+        Essa operação funcionou ? justifique
 */
+        const A = 20;
+        A = 50; // Tipe de erro: atribuição para a varivel constante.
 
+        // Resposta: ????
 
-/*  
-    Criar uma constante A que armazene um valor de 20 e  troque o valor de A para 50.
-
-    Responda:
-    Essa operação funcionou ? justifique
-*/
-
-/* 
+/*
 
 a) Crie as seguintes variáveis: nome, formacao, hobby, idade, altura, anoNascimento.
 
-b) Atribua valores às variáveis criadas no exercício anterior e mostre seus valores no console.
+b) Atribua valores diferentes às variáveis criadas no exercício anterior.
 
-c) Atribua novos valores (pode ser do mesmo tipo ou não) para as variáveis e mostre-os novamente.
+c) Atribua novos valores de TIPO diferente para as variáveis e mostre-os novamente.
 
 d) Mostre no console os nomes, os valores e os tipos de valores de cada uma das variáveis
 
 
 Obs.: Typeof retorna o tipo de um valor qualquer.
-    
+
 */

@@ -1,23 +1,22 @@
 /*   
     Usando o console do seu navegador ou terminal, apresente as informações citadas abaixo:
 
-    Nome, idade, data de nascimento, nacionalidade
+    Nome, idade, ano de nascimento, nacionalidade
 
-    lembrando que para executar o camando, deve ser exatamente como no exemplo:
+    P**Para chamar a variavel e verificar o que tem dentro, você pode fazer de dois jeitos.
 
-    console.log("isabela")
+        1. Chamando pelo nome que atribui a ela.
+        2. Usando o console.log()
 */
 
+    let nome = "Isabela";
+    let idade = 25;
+    let anoDeNascimento = 1992;
+    let nacionalidade = "Brasileira"
 
-/*
+    // Resposta de retorno
 
-Executar três operações matematicas, solicitadas abaixo:
-
- subtração, multiplicação  ,porcentagem 
-
-lembrando que para executar o camando, deve ser exatamente como no exemplo:
-
-    console.log(3 + 5)
-
-*/
-
+    nome // Isabela 
+    idade // 25
+    console.log(anoDeNascimento); // 1992
+    console.log(nacionalidade); // Brasileira

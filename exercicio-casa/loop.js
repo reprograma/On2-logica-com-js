@@ -27,3 +27,8 @@
     '9 x 10 = 90'
     '10 x 10 = 100'
 */
+
+/* 
+ 3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.
+
+*/
