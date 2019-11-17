@@ -1,81 +1,76 @@
 /*  
-     Usando o console do seu navegador ou terminal, apresente as informações das variaveis citadas abaixo:
+   1. Crie as varias citadas abaixo, complentadno com suas informações e print no console.log seu retorno. 
+    
+        nome, profissão, escolaridade, estado, cidade
 
-    nome, profissão, escolaridade, estado, cidade
-
-    lembrando que para executar o camando, deve ser exatamente como no exemplo:
-
-    let IDENTIFICADOR = ATRIBUTO
-
-    let nome = "Isabela";
+    Dica: let IDENTIFICADOR = ATRIBUTO
 
 */
 
 /*  
-     Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a ela:
+    2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
 
-    Nnome, profissão, escolaridade, estado, cidade
-
-    lembrando que para executar o camando, deve ser exatamente como no exemplo:
-
-    IDENTIFICADOR = ATRIBUTO
+        Dica: IDENTIFICADOR = ATRIBUTO
     
-    nome = "Maria";
-
     obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
 
 */
 
 
 /*  
-    Escreva uma variavel A que armazene o valor de 10  e valor de 20 em uma variavel B. 
-    Em seguida utilizando as atribuiçãoes entre as variaveis, troque os seus conteudos, fazendo com que o valor de A passe para B e vice-versa.
-
-*/
-
-
-/*  
-    Escreva uma variavel A que armazene o valor de 10  e valor de 20 em uma variavel B. 
-    Mostre o valor de B
-    Depois armazene o valor de 5 na variavel B
-    MOstre o valor de A  e B 
-
-    Para mostrar utilize o console.log()
-
-*/
-
-
-/*  
-    Escreva uma variavel A que armazene o valor de 30 e valor de 20 em uma variavel B. Armazene na variavel C a soma de A + B 
-    Mostre o valor de C
-    Depois armazene o valor de 10 na variavel B
-    Armazene na variavel C a soma de A + B 
-    MOstre o valor de A, B e C 
-
-    Para mostrar utilize o console.log()
-
-*/
-
-
-/*  
-    Escreva uma variavel A que armazene o valor de 10 e valor de 20 em uma variavel B. 
-    Armazene na variavel C  o valor de A  e na varivel B o valor de C e no  na variavel A o valor de B 
-    Mostre o valor de A, B e C
+    3. Trabalhando variavel e logica, escreva:
     
-    Para mostrar utilize o console.log()
+        Variavel A = 10
+        Variavel B = 20
 
+    Troque o valor de A para B e valor de B para A.
 */
 
 
 /*  
-    Criar uma constante A que armazene um valor de 20 e  troque o valor de A para 50.
+    4. Escreva:
+
+        variavel A = 10
+        variavel B = 20
+        Mostre o valor de B
+        variavel B = 5
+        Mostre o valor de A e B
+*/
+
+
+/*  
+    5. Escreva:
+
+        variavel A = 30
+        variavel B = 20
+        variavel C = A + B
+        Mostre C
+        variavel B = 10
+        veriavel C = A + B
+        Mostre A,B,C
+*/
+
+
+/*  
+    6. Escreva:
+
+        variavel A = 10
+        variavel B = 20
+        variavel C = A 
+        variavel B = C
+        veriavel A = B
+        Mostre A,B,C
+*/
+
+
+/*  
+    7. Crie uma constante A que armazene um valor de 20 e troque o valor de A para 50.
 
     Responda:
     Essa operação funcionou ? justifique
 */
 
 /*  
-    Em um programa que recebe um VALOR MONETÁRIO e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. Onde usariamos varáveis, constante e console?
-
-
+    8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. 
+    Onde usariamos varáveis, constante e console?
 */
