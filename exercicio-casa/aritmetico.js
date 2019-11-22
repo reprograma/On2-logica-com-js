@@ -15,3 +15,11 @@ ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existe
 */
 let retornoMoedas = 798%5 // 3
 let retornoNotas = 798/5 // 159
+
+let saldo = 798;
+let valorNota = 5;
+
+let valorEmMoedas = saldo % valorNota;
+let numeroDeNotas = (saldo - valorEmMoedas) / valorNota;
+
+// let valorNota = 10

@@ -6,14 +6,16 @@
     Dica: let IDENTIFICADOR = ATRIBUTO
 */
 
-let nome = "Isabela";
-let profissao = "DEV";
-let escolaridade = "Cursando ensino superior";
-let estado = "São Paulo";
-let cidade = "São Paulo";
 
-// console.log(`${nome} ${profissao}, está morando atualmente na cidade de ${cidade} `);
+
+let nome = "Jessica";
+let profissao = "Dev";
+let escolaridade = "Ensino Superior";
+let estado = "Rio de Janeiro";
+let cidade = "Rio de Janeiro";
+
 console.log(nome,profissao,escolaridade,estado,cidade);
+
 
 
 /*  
@@ -26,11 +28,11 @@ console.log(nome,profissao,escolaridade,estado,cidade);
 
 nome = "Maria";
 profissao = "professora";
-escolaridade = "cursinho";
-cidade = "Rio de janeiro";
-estado = "Rio de janeiro";
+escolaridade = "Mestrado";
+estado = "Sao paulo";
+cidade = "Sao paulo";
 
-console.log(nome, profissao, escolaridade,cidade,estado);
+console.log(nome,profissao,escolaridade,estado,cidade);
 
 /*  
     3. Trabalhando variavel e logica, escreva:
@@ -61,7 +63,7 @@ let A = 10;
 let B = 20;
 console.log(B); // 5
 B = 5;
-console.log(A,B) // 10 5
+console.log(A,B); // 10 5
 
 /*  
     5. Escreva:
@@ -77,11 +79,11 @@ console.log(A,B) // 10 5
 
 let A = 30;
 let B = 20;
-let C = A + B;
+let C =  A + B;
 console.log(C); // 50
 B = 10;
 C = A + B;
-console.log(A,B,C) // 30 10 40
+console.log(A,B,C); // 30 10 40
 
 
 /*  
