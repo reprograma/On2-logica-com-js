@@ -11,8 +11,12 @@
 
 */
 
-/* Exercicio 1  */
+let andares = "#";
 
+for(i = 1; i <= 5; i++){
+    console.log(andares)
+    andares = andares + "#"
+}
 
 /*
  2. Faça a taboada do 10 utilizando um dos seguintes loops for, while, ou do while.
@@ -30,6 +34,7 @@
     '9 x 10 = 90'
     '10 x 10 = 100'
 */
+for
 
 /* 
  3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.

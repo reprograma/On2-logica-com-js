@@ -7,6 +7,14 @@
 
 */
 
+let nome = "Aline";
+let profissao = "Administradora";
+let escolaridade = "Superior Completo";
+let estado = "São Paulo";
+let cidade = "Indaiatuba";
+
+console.log(nome, profissao, escolaridade, estado, cidade)
+
 /*  
     2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
 
@@ -16,6 +24,13 @@
 
 */
 
+nome = "Isabela";
+profissao = "Desenvolvedora"
+escolaridade = "Superior Cursando"
+estado = "Paraná"
+cidade = "Limeira"
+
+console.log(nome, profissao, escolaridade, estado, cidade)
 
 /*  
     3. Trabalhando variavel e logica, escreva:
@@ -26,6 +41,12 @@
     Troque o valor de A para B e valor de B para A.
 */
 
+let A = 10;
+let B = 20;
+let C = A;
+A = B;
+B = C;
+console.log(A,B)
 
 /*  
     4. Escreva:
@@ -37,6 +58,11 @@
         Mostre o valor de A e B
 */
 
+let A = 10;
+let B = 20;
+console.log(B);
+B = 5;
+console.log(A,B)
 
 /*  
     5. Escreva:
@@ -49,7 +75,13 @@
         veriavel C = A + B
         Mostre A,B,C
 */
-
+let A = 30;
+let B = 20;
+let C = A + B;
+console.log(C);
+B = 10;
+C = A + B;
+console.log(A,B,C)
 
 /*  
     6. Escreva:
@@ -61,6 +93,13 @@
         veriavel A = B
         Mostre A,B,C
 */
+let A = 10;
+let B = 20;
+let C = A;
+let B = C;
+let A = B;
+
+console.log(A,B,C);
 
 
 /*  
@@ -69,8 +108,16 @@
     Responda:
     Essa operação funcionou ? justifique
 */
+const A = 100;
+A = 80;
+
+// Não podemos mudar porque CONSTANTE é um valor fixo;
 
 /*  
     8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. 
     Onde usariamos varáveis, constante e console?
 */
+let valorMonetario = 100;
+const taxaJuros = 1.03;
+let valorFinal = valorMonetario * taxaJuros;
+console.log(valorFinal);
