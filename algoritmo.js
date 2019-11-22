@@ -11,5 +11,5 @@ Alunos aprovados devem ver a mensagem: Parabéns, você está aprovado, aproveit
 Alunos reprovados devem ver a mensagem: Reprovados :(
 
 Bônus: Para os alunos reprovados, mostrar mensagem perguntando se eles gostariam de fazer aulas de recuperação para tentar melhorar a nota e passar de ano. Se o aluno responder que não, mostre a mensagem: Que pena, te vejo ano que vem. Se o aluno responder que sim, mostre a mensagem: Ótimo, as aulas de recuperação começam semana que vem!
-.
+
 */
