@@ -1,0 +1,577 @@
+[1mdiff --git a/exercicio-casa/algoritmo.js b/exercicio-casa/algoritmo.js[m
+[1mindex 9b8841a..bf2ebbf 100644[m
+[1m--- a/exercicio-casa/algoritmo.js[m
+[1m+++ b/exercicio-casa/algoritmo.js[m
+[36m@@ -12,4 +12,25 @@[m [mAlunos reprovados devem ver a mensagem: Reprovados :([m
+ [m
+ Bônus: Para os alunos reprovados, mostrar mensagem perguntando se eles gostariam de fazer aulas de recuperação para tentar melhorar a nota e passar de ano. Se o aluno responder que não, mostre a mensagem: Que pena, te vejo ano que vem. Se o aluno responder que sim, mostre a mensagem: Ótimo, as aulas de recuperação começam semana que vem![m
+ [m
+[31m-*/[m
+\ No newline at end of file[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mAlgoritmo MediaAluno[m
+[32m+[m[32mvar[m
+[32m+[m[32mnota1, nota2, nota3, media: Real[m
+[32m+[m
+[32m+[m[32mInicio[m
+[32m+[m[32mEscreva("Digite a primeira nota: ")[m
+[32m+[m[32mLeia(nota1)[m
+[32m+[m[32mEscreva("Digite a segunda nota: ")[m
+[32m+[m[32mLeia(nota2)[m
+[32m+[m[32mEscreva("Digite a terceira nota: ")[m
+[32m+[m[32mLeia(nota3)[m
+[32m+[m[32mmedia = (nota1 + nota2 + nota3)/3;[m
+[32m+[m[32mEscreva ("A média do aluno é: ", media)[m
+[32m+[m[32mSe (media >=7) entao[m
+[32m+[m[32mEscreva("Parabéns, você está aprovado, aproveite suas férias! :)")[m
+[32m+[m[32msenao[m
+[32m+[m[32mEscreva("Reprovado :(")[m
+[32m+[m[32mFimSe[m
+[32m+[m
+[32m+[m[32mFimAlgoritmo[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio-casa/aritmetico.js b/exercicio-casa/aritmetico.js[m
+[1mindex ede4514..1eadd86 100644[m
+[1m--- a/exercicio-casa/aritmetico.js[m
+[1m+++ b/exercicio-casa/aritmetico.js[m
+[36m@@ -1,7 +1,9 @@[m
+ /* [m
+ Quanto sobra? [m
+ [m
+[31m-Imagine que você quebrou seu porquinho que tinha 798 reais para comprar o ingresso do show de Beyonce. Agora você precisa trocar as moedas em um banco, mas chega no caixa e percebe que ele só tem notas de 5 reais. descubra:[m
+[32m+[m[32mImagine que você quebrou seu porquinho que tinha 798 reais para comprar o ingresso do show de Beyonce.[m
+[32m+[m[32mAgora você precisa trocar as moedas em um banco, mas chega no caixa e percebe que ele só tem notas de 5 reais.[m
+[32m+[m[32mdescubra:[m
+     [m
+ a) Qual o valor que você vai voltar em moedas? (use o operador resto da divisão)[m
+     [m
+[36m@@ -13,3 +15,7 @@[m [mObs:[m
+ ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existem muitas outros.[m
+ [m
+ */[m
+[32m+[m[32ma) let retornoMoedas = 798%5 // 3[m[41m [m
+[32m+[m[32mb) let retornoNotas = 798/5 // 159.6[m
+[32m+[m[32mparseInt (retornoNotas) // 159[m
+[32m+[m[32mc) retornoMoedas = 798%10 // 8[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio-casa/condicionais.js b/exercicio-casa/condicionais.js[m
+[1mindex 7d7b9e9..b0e3486 100644[m
+[1m--- a/exercicio-casa/condicionais.js[m
+[1m+++ b/exercicio-casa/condicionais.js[m
+[36m@@ -1,41 +1,126 @@[m
+ /*  [m
+[31m- 1. Na porta de uma balada, confirme a seguintes informações:[m
+[32m+[m[32m   1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno.[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m        nome, profissão, escolaridade, estado, cidade[m
+ [m
+[31m-    SE for maior e igual a 18  - ( Passe a mensagem ao usuario que "Maior que 18 - autorizado")[m
+[31m-    Se for menor que 18 - ( Passe a mensagem ao usuario que "Menor que 18 - não autorizado")[m
+[32m+[m[32m    Dica: let IDENTIFICADOR = ATRIBUTO[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mlet nome = "Renata";[m
+[32m+[m[32mlet profissao = "revisora de texto";[m
+[32m+[m[32mlet escolaridade = "ensino superior completo";[m
+[32m+[m[32mlet estado = "São Paulo";[m
+[32m+[m[32mlet cidade = "São Paulo";[m
+[32m+[m
+[32m+[m[32m// console.log(`${nome}, ${profissao}, mora na cidade de ${cidade} `);[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.[m
+ [m
+[32m+[m[32m        Dica: IDENTIFICADOR = ATRIBUTO[m
+[32m+[m[41m    [m
+[32m+[m[32m    obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente.[m[41m [m
+ */[m
+ [m
+[32m+[m[32mnome = "Fernanda";[m
+[32m+[m[32mprofissao = "auxiliar de escritório";[m
+[32m+[m[32mescolaridade = "ensinho superior incompleto";[m
+[32m+[m[32mcidade = "Rio de janeiro";[m
+[32m+[m[32mestado = "Rio de janeiro";[m
+[32m+[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    3. Trabalhando variavel e logica, escreva:[m
+[32m+[m[41m    [m
+[32m+[m[32m        Variavel A = 10[m
+[32m+[m[32m        Variavel B = 20[m
+[32m+[m
+[32m+[m[32m    Troque o valor de A para B e valor de B para A.[m
+[32m+[m[32m*/[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mA = B;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mconsole.log(A,B)[m
+ [m
+ /*  [m
+[31m- 2. Em uma fila de cadastro, eu tenho 25 anos e atendente precisa  confirmar a seguintes informações:[m
+[32m+[m[32m    4. Escreva:[m
+[32m+[m
+[32m+[m[32m        variavel A = 10[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        Mostre o valor de B[m
+[32m+[m[32m        variavel B = 5[m
+[32m+[m[32m        Mostre o valor de A e B[m
+[32m+[m[32m*/[m
+ [m
+[31m-    SE idade é menor igual a  18 -  ( Passe a mensagem ao usuario que "criança/adolescente")[m
+[31m-    SE for maior que 18  E menor igual a 60 - ( Passe a mensagem ao ususrio que "Adulto")[m
+[31m-    SE NÃO  ( Passe a mensagem ao ususrio que "Idoso")[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mconsole.log(B); // 5[m
+[32m+[m[32mB = 5;[m
+[32m+[m[32mconsole.log(A,B) // 10 5[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    5. Escreva:[m
+[32m+[m
+[32m+[m[32m        variavel A = 30[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        variavel C = A + B[m
+[32m+[m[32m        Mostre C[m
+[32m+[m[32m        variavel B = 10[m
+[32m+[m[32m        veriavel C = A + B[m
+[32m+[m[32m        Mostre A,B,C[m
+ */[m
+ [m
+[32m+[m[32mlet A = 30;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A + B;[m
+[32m+[m[32mconsole.log(C); // 50[m
+[32m+[m[32mB = 10;[m
+[32m+[m[32mC = A + B;[m
+[32m+[m[32mconsole.log(A,B,C) // 30 10 40[m
+ [m
+[31m-/* [m
+[31m-    3. Calculo IMC[m
+ [m
+[31m-    Crie uma variavel receba  peso em kg, uma variavel que receba altura em metros. [m
+[31m-    Faça as comparações necessarias usando if e else if e els, para determinar qual a interpretação do IMC atual.[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    6. Escreva:[m
+[32m+[m
+[32m+[m[32m        variavel A = 10[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        variavel C = A[m[41m [m
+[32m+[m[32m        variavel B = C[m
+[32m+[m[32m        veriavel A = B[m
+[32m+[m[32m        Mostre A,B,C[m
+[32m+[m[32m*/[m
+ [m
+[31m-    IMC  / Interpretação[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mA = B;[m
+ [m
+[31m-    Até 18,5 (inclusive)  / Abaixo do peso normal[m
+[32m+[m[32mconsole.log(A,B,C); // 10 10 10[m
+ [m
+[31m-    De 18,5 a 25 (inclusive) / Peso normal[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.[m
+ [m
+[31m-    De 25 a 30 (inclusive) / Acima do peso normal[m
+[32m+[m[32m    Responda:[m
+[32m+[m[32m    Essa operação funcionou ? justifique[m
+[32m+[m[32m*/[m
+ [m
+[31m-    Acima de 30 / Obesidade[m
+[32m+[m[32mconst A = 100;[m
+[32m+[m[32mA = 80;[m
+ [m
+[31m-    Exemplo:[m
+[31m-    Peso = 85 [m
+[31m-    Altura = 1.80[m
+[31m-    Resultado = Acima do peso normal [m
+[32m+[m[32m// Resposta: Não conseguimos alterar o valor da constante, pois sua característica é a impossibilidade de alteração durante a execução do programa.[m
+ [m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada.[m[41m [m
+[32m+[m[32m    Onde usariamos varáveis, constante e console?[m
+ */[m
+ [m
+[32m+[m[32mlet valorMonetario = 100;[m
+[32m+[m[32mconst taxaJuros = 1.03;[m
+[32m+[m[32mlet valorFinal = valorMonetario * taxaJuros;[m
+[32m+[m[32mconsole.log(valorFinal);[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio-casa/console.js b/exercicio-casa/console.js[m
+[1mindex 36bd62a..16fe160 100644[m
+[1m--- a/exercicio-casa/console.js[m
+[1m+++ b/exercicio-casa/console.js[m
+[36m@@ -6,3 +6,15 @@[m [mExecutar três operações matematicas, solicitadas abaixo:[m
+ [m
+ */[m
+ [m
+[32m+[m[32mlet numeroUm = 5[m
+[32m+[m[32mlet numeroDois = 10[m
+[32m+[m
+[32m+[m
+[32m+[m[32mconsole.log(numeroDois - numeroUm)[m
+[32m+[m[32m//A resposta é 5.[m
+[32m+[m[32mconsole.log(numeroDois/numeroUm)[m
+[32m+[m[32m//A resposta é 2.[m
+[32m+[m[32mconsole.log(numeroUm * numeroDois)[m
+[32m+[m[32m//A resposta é 50.[m
+[32m+[m[32mconsole.log(numeroUm + numeroDois)[m
+[32m+[m[32m//A resposta é 15.[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio-casa/funcao.js b/exercicio-casa/funcao.js[m
+[1mindex e5aec1f..6709866 100644[m
+[1m--- a/exercicio-casa/funcao.js[m
+[1m+++ b/exercicio-casa/funcao.js[m
+[36m@@ -5,6 +5,19 @@[m
+         Dica:[m
+         Nesse exercicio você vai usar a function e if e else juntos.[m
+ */[m
+[32m+[m[32mfunction notaAnual(nota1, nota2, nota3){[m
+[32m+[m[32m    return parseInt((nota1 + nota2 + nota3) / 3);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mlet resultfinal = notaAnual(5,10,7);[m
+[32m+[m
+[32m+[m[32mif (resultfinal >= 7){[m
+[32m+[m[32m    console.log("Aluno Aprovado");[m
+[32m+[m[32m}else if (resultfinal >= 5 && resultfinal < 7){[m
+[32m+[m[32m    console.log("Aluno em recuperação");[m
+[32m+[m[32m}else{[m
+[32m+[m[32m    console.log("Aluno reprovado");[m
+[32m+[m[32m}[m
+ [m
+ /* [m
+     2.  Crie uma função que converta o número do mês do ano pelo seu nome. [m
+[36m@@ -16,5 +29,44 @@[m
+         Nesse exercicio você vai usar a function e switch juntos.[m
+ */[m
+ [m
+[32m+[m[32mfunction mesAno(numero) {[m
+[32m+[m
+[32m+[m[32m    switch (numero) {[m
+[32m+[m[32m        case 01:[m
+[32m+[m[32m            // return "Janeiro"[m
+[32m+[m[32m            console.log("Janeiro");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 02:[m
+[32m+[m[32m            console.log("Fevereiro");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 03:[m
+[32m+[m[32m            console.log("Março");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 04:[m
+[32m+[m[32m            console.log("Abril");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 05:[m
+[32m+[m[32m            console.log("Maio");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 06:[m
+[32m+[m[32m            console.log("Junho");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 07:[m
+[32m+[m[32m            console.log("Julho");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 08:[m
+[32m+[m[32m            console.log("Agosto");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 09:[m
+[32m+[m[32m            console.log("Setembro");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        case 10:[m
+[32m+[m[32m            console.log("Outubro");[m
+[32m+[m[32m            break;[m
+[32m+[m[32m        default: console.log("Não é um mês");[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m}[m
+ [m
+ [m
+[32m+[m[32mconsole.log(mesAno(10))[m
+[1mdiff --git a/exercicio-casa/loop.js b/exercicio-casa/loop.js[m
+[1mindex 2f5c38c..b0e3486 100644[m
+[1m--- a/exercicio-casa/loop.js[m
+[1m+++ b/exercicio-casa/loop.js[m
+[36m@@ -1,34 +1,126 @@[m
+[31m-/*[m
+[31m-1.  Desenhe uma escada 5 andares, utilizando  um dos seguintes tipos de loop: for, do while ou while.[m
+[31m-    Utilize a string para passar dentro um caractere, para desenhar a escada.[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m   1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno.[m[41m [m
+[32m+[m[41m    [m
+[32m+[m[32m        nome, profissão, escolaridade, estado, cidade[m
+ [m
+[31m-    Exemplo:[m
+[31m-    '#'[m
+[31m-    '##'[m
+[31m-    '###'[m
+[31m-    '####'[m
+[31m-    '#####'[m
+[32m+[m[32m    Dica: let IDENTIFICADOR = ATRIBUTO[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mlet nome = "Renata";[m
+[32m+[m[32mlet profissao = "revisora de texto";[m
+[32m+[m[32mlet escolaridade = "ensino superior completo";[m
+[32m+[m[32mlet estado = "São Paulo";[m
+[32m+[m[32mlet cidade = "São Paulo";[m
+[32m+[m
+[32m+[m[32m// console.log(`${nome}, ${profissao}, mora na cidade de ${cidade} `);[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.[m
+[32m+[m
+[32m+[m[32m        Dica: IDENTIFICADOR = ATRIBUTO[m
+[32m+[m[41m    [m
+[32m+[m[32m    obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente.[m[41m [m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mnome = "Fernanda";[m
+[32m+[m[32mprofissao = "auxiliar de escritório";[m
+[32m+[m[32mescolaridade = "ensinho superior incompleto";[m
+[32m+[m[32mcidade = "Rio de janeiro";[m
+[32m+[m[32mestado = "Rio de janeiro";[m
+[32m+[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    3. Trabalhando variavel e logica, escreva:[m
+[32m+[m[41m    [m
+[32m+[m[32m        Variavel A = 10[m
+[32m+[m[32m        Variavel B = 20[m
+[32m+[m
+[32m+[m[32m    Troque o valor de A para B e valor de B para A.[m
+[32m+[m[32m*/[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mA = B;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mconsole.log(A,B)[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    4. Escreva:[m
+ [m
+[32m+[m[32m        variavel A = 10[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        Mostre o valor de B[m
+[32m+[m[32m        variavel B = 5[m
+[32m+[m[32m        Mostre o valor de A e B[m
+ */[m
+ [m
+[31m-/*[m
+[31m- 2. Faça a taboada do 10 utilizando um dos seguintes loops for, while, ou do while.[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mconsole.log(B); // 5[m
+[32m+[m[32mB = 5;[m
+[32m+[m[32mconsole.log(A,B) // 10 5[m
+ [m
+[31m-    Exemplo:[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    5. Escreva:[m
+ [m
+[31m-    '1 x 10 = 10'[m
+[31m-    '2 x 10 = 20'[m
+[31m-    '3 x 10 = 30'[m
+[31m-    '4 x 10 = 40'[m
+[31m-    '5 x 10 = 50'[m
+[31m-    '6 x 10 = 60'[m
+[31m-    '7 x 10 = 70'[m
+[31m-    '8 x 10 = 80'[m
+[31m-    '9 x 10 = 90'[m
+[31m-    '10 x 10 = 100'[m
+[32m+[m[32m        variavel A = 30[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        variavel C = A + B[m
+[32m+[m[32m        Mostre C[m
+[32m+[m[32m        variavel B = 10[m
+[32m+[m[32m        veriavel C = A + B[m
+[32m+[m[32m        Mostre A,B,C[m
+ */[m
+ [m
+[31m-/* [m
+[31m- 3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.[m
+[32m+[m[32mlet A = 30;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A + B;[m
+[32m+[m[32mconsole.log(C); // 50[m
+[32m+[m[32mB = 10;[m
+[32m+[m[32mC = A + B;[m
+[32m+[m[32mconsole.log(A,B,C) // 30 10 40[m
+[32m+[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    6. Escreva:[m
+[32m+[m
+[32m+[m[32m        variavel A = 10[m
+[32m+[m[32m        variavel B = 20[m
+[32m+[m[32m        variavel C = A[m[41m [m
+[32m+[m[32m        variavel B = C[m
+[32m+[m[32m        veriavel A = B[m
+[32m+[m[32m        Mostre A,B,C[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mA = B;[m
+[32m+[m
+[32m+[m[32mconsole.log(A,B,C); // 10 10 10[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.[m
+[32m+[m
+[32m+[m[32m    Responda:[m
+[32m+[m[32m    Essa operação funcionou ? justifique[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mconst A = 100;[m
+[32m+[m[32mA = 80;[m
+[32m+[m
+[32m+[m[32m// Resposta: Não conseguimos alterar o valor da constante, pois sua característica é a impossibilidade de alteração durante a execução do programa.[m
+[32m+[m
+[32m+[m[32m/*[m[41m  [m
+[32m+[m[32m    8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada.[m[41m [m
+[32m+[m[32m    Onde usariamos varáveis, constante e console?[m
+[32m+[m[32m*/[m
+ [m
+[31m-*/[m
+\ No newline at end of file[m
+[32m+[m[32mlet valorMonetario = 100;[m
+[32m+[m[32mconst taxaJuros = 1.03;[m
+[32m+[m[32mlet valorFinal = valorMonetario * taxaJuros;[m
+[32m+[m[32mconsole.log(valorFinal);[m
+\ No newline at end of file[m
+[1mdiff --git a/exercicio-casa/variavel.js b/exercicio-casa/variavel.js[m
+[1mindex dbd3fee..b0e3486 100644[m
+[1m--- a/exercicio-casa/variavel.js[m
+[1m+++ b/exercicio-casa/variavel.js[m
+[36m@@ -1,21 +1,36 @@[m
+ /*  [m
+[31m-   1. Crie as varias citadas abaixo, complentadno com suas informações e print no console.log seu retorno. [m
+[32m+[m[32m   1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno.[m[41m [m
+     [m
+         nome, profissão, escolaridade, estado, cidade[m
+ [m
+     Dica: let IDENTIFICADOR = ATRIBUTO[m
+[31m-[m
+ */[m
+ [m
+[32m+[m[32mlet nome = "Renata";[m
+[32m+[m[32mlet profissao = "revisora de texto";[m
+[32m+[m[32mlet escolaridade = "ensino superior completo";[m
+[32m+[m[32mlet estado = "São Paulo";[m
+[32m+[m[32mlet cidade = "São Paulo";[m
+[32m+[m
+[32m+[m[32m// console.log(`${nome}, ${profissao}, mora na cidade de ${cidade} `);[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+[32m+[m
+[32m+[m
+ /*  [m
+     2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.[m
+ [m
+         Dica: IDENTIFICADOR = ATRIBUTO[m
+     [m
+     obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. [m
+[31m-[m
+ */[m
+ [m
+[32m+[m[32mnome = "Fernanda";[m
+[32m+[m[32mprofissao = "auxiliar de escritório";[m
+[32m+[m[32mescolaridade = "ensinho superior incompleto";[m
+[32m+[m[32mcidade = "Rio de janeiro";[m
+[32m+[m[32mestado = "Rio de janeiro";[m
+[32m+[m
+[32m+[m[32mconsole.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);[m
+ [m
+ /*  [m
+     3. Trabalhando variavel e logica, escreva:[m
+[36m@@ -25,7 +40,12 @@[m
+ [m
+     Troque o valor de A para B e valor de B para A.[m
+ */[m
+[31m-[m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mA = B;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mconsole.log(A,B)[m
+ [m
+ /*  [m
+     4. Escreva:[m
+[36m@@ -37,6 +57,11 @@[m
+         Mostre o valor de A e B[m
+ */[m
+ [m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mconsole.log(B); // 5[m
+[32m+[m[32mB = 5;[m
+[32m+[m[32mconsole.log(A,B) // 10 5[m
+ [m
+ /*  [m
+     5. Escreva:[m
+[36m@@ -50,6 +75,14 @@[m
+         Mostre A,B,C[m
+ */[m
+ [m
+[32m+[m[32mlet A = 30;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A + B;[m
+[32m+[m[32mconsole.log(C); // 50[m
+[32m+[m[32mB = 10;[m
+[32m+[m[32mC = A + B;[m
+[32m+[m[32mconsole.log(A,B,C) // 30 10 40[m
+[32m+[m
+ [m
+ /*  [m
+     6. Escreva:[m
+[36m@@ -62,6 +95,13 @@[m
+         Mostre A,B,C[m
+ */[m
+ [m
+[32m+[m[32mlet A = 10;[m
+[32m+[m[32mlet B = 20;[m
+[32m+[m[32mlet C = A;[m
+[32m+[m[32mB = C;[m
+[32m+[m[32mA = B;[m
+[32m+[m
+[32m+[m[32mconsole.log(A,B,C); // 10 10 10[m
+ [m
+ /*  [m
+     7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.[m
+[36m@@ -70,7 +110,17 @@[m
+     Essa operação funcionou ? justifique[m
+ */[m
+ [m
+[32m+[m[32mconst A = 100;[m
+[32m+[m[32mA = 80;[m
+[32m+[m
+[32m+[m[32m// Resposta: Não conseguimos alterar o valor da constante, pois sua característica é a impossibilidade de alteração durante a execução do programa.[m
+[32m+[m
+ /*  [m
+     8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. [m
+     Onde usariamos varáveis, constante e console?[m
+[31m-*/[m
+\ No newline at end of file[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mlet valorMonetario = 100;[m
+[32m+[m[32mconst taxaJuros = 1.03;[m
+[32m+[m[32mlet valorFinal = valorMonetario * taxaJuros;[m
+[32m+[m[32mconsole.log(valorFinal);[m
+\ No newline at end of file[m

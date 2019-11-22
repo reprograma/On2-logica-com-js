@@ -1,41 +1,126 @@
 /*  
- 1. Na porta de uma balada, confirme a seguintes informações:
+   1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno. 
+    
+        nome, profissão, escolaridade, estado, cidade
 
-    SE for maior e igual a 18  - ( Passe a mensagem ao usuario que "Maior que 18 - autorizado")
-    Se for menor que 18 - ( Passe a mensagem ao usuario que "Menor que 18 - não autorizado")
-
+    Dica: let IDENTIFICADOR = ATRIBUTO
 */
+
+let nome = "Renata";
+let profissao = "revisora de texto";
+let escolaridade = "ensino superior completo";
+let estado = "São Paulo";
+let cidade = "São Paulo";
+
+// console.log(`${nome}, ${profissao}, mora na cidade de ${cidade} `);
+console.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);
 
 
 /*  
- 2. Em uma fila de cadastro, eu tenho 25 anos e atendente precisa  confirmar a seguintes informações:
+    2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
 
-    SE idade é menor igual a  18 -  ( Passe a mensagem ao usuario que "criança/adolescente")
-    SE for maior que 18  E menor igual a 60 - ( Passe a mensagem ao ususrio que "Adulto")
-    SE NÃO  ( Passe a mensagem ao ususrio que "Idoso")
+        Dica: IDENTIFICADOR = ATRIBUTO
+    
+    obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
 */
 
+nome = "Fernanda";
+profissao = "auxiliar de escritório";
+escolaridade = "ensinho superior incompleto";
+cidade = "Rio de janeiro";
+estado = "Rio de janeiro";
 
-/* 
-    3. Calculo IMC
+console.log(`Olá! Meu nome é ${nome}. Trabalho como ${profissao} e tenho ${escolaridade}. Moro em ${cidade}, ${estado}.`);
 
-    Crie uma variavel receba  peso em kg, uma variavel que receba altura em metros. 
-    Faça as comparações necessarias usando if e else if e els, para determinar qual a interpretação do IMC atual.
+/*  
+    3. Trabalhando variavel e logica, escreva:
+    
+        Variavel A = 10
+        Variavel B = 20
 
-    IMC  / Interpretação
+    Troque o valor de A para B e valor de B para A.
+*/
+let A = 10;
+let B = 20;
+let C = A;
+A = B;
+B = C;
+console.log(A,B)
 
-    Até 18,5 (inclusive)  / Abaixo do peso normal
+/*  
+    4. Escreva:
 
-    De 18,5 a 25 (inclusive) / Peso normal
-
-    De 25 a 30 (inclusive) / Acima do peso normal
-
-    Acima de 30 / Obesidade
-
-    Exemplo:
-    Peso = 85 
-    Altura = 1.80
-    Resultado = Acima do peso normal 
-
+        variavel A = 10
+        variavel B = 20
+        Mostre o valor de B
+        variavel B = 5
+        Mostre o valor de A e B
 */
 
+let A = 10;
+let B = 20;
+console.log(B); // 5
+B = 5;
+console.log(A,B) // 10 5
+
+/*  
+    5. Escreva:
+
+        variavel A = 30
+        variavel B = 20
+        variavel C = A + B
+        Mostre C
+        variavel B = 10
+        veriavel C = A + B
+        Mostre A,B,C
+*/
+
+let A = 30;
+let B = 20;
+let C = A + B;
+console.log(C); // 50
+B = 10;
+C = A + B;
+console.log(A,B,C) // 30 10 40
+
+
+/*  
+    6. Escreva:
+
+        variavel A = 10
+        variavel B = 20
+        variavel C = A 
+        variavel B = C
+        veriavel A = B
+        Mostre A,B,C
+*/
+
+let A = 10;
+let B = 20;
+let C = A;
+B = C;
+A = B;
+
+console.log(A,B,C); // 10 10 10
+
+/*  
+    7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.
+
+    Responda:
+    Essa operação funcionou ? justifique
+*/
+
+const A = 100;
+A = 80;
+
+// Resposta: Não conseguimos alterar o valor da constante, pois sua característica é a impossibilidade de alteração durante a execução do programa.
+
+/*  
+    8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. 
+    Onde usariamos varáveis, constante e console?
+*/
+
+let valorMonetario = 100;
+const taxaJuros = 1.03;
+let valorFinal = valorMonetario * taxaJuros;
+console.log(valorFinal);

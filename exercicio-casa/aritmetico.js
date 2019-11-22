@@ -1,7 +1,9 @@
 /* 
 Quanto sobra? 
 
-Imagine que você quebrou seu porquinho que tinha 798 reais para comprar o ingresso do show de Beyonce. Agora você precisa trocar as moedas em um banco, mas chega no caixa e percebe que ele só tem notas de 5 reais. descubra:
+Imagine que você quebrou seu porquinho que tinha 798 reais para comprar o ingresso do show de Beyonce.
+Agora você precisa trocar as moedas em um banco, mas chega no caixa e percebe que ele só tem notas de 5 reais.
+descubra:
     
 a) Qual o valor que você vai voltar em moedas? (use o operador resto da divisão)
     
@@ -13,3 +15,7 @@ Obs:
 ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existem muitas outros.
 
 */
+a) let retornoMoedas = 798%5 // 3 
+b) let retornoNotas = 798/5 // 159.6
+parseInt (retornoNotas) // 159
+c) retornoMoedas = 798%10 // 8
