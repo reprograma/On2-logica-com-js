@@ -6,8 +6,14 @@ Executar três operações matematicas, solicitadas abaixo:
 
 */
 
-let numberOne = 5
-let numberTwo = 10
+let idadeMae = 60;
+let idadePai = 70;
+let soma = idadeMae + idadePai // 130
 
-console.log(numberOne + numberTwo) 
+let maracuja = 10;
+let abacaxi = 5;
+let subtracao = maracuja - abacaxi // 5
 
+let balas = 50
+let doces = 5
+let divisao = balas / doces //10

@@ -6,17 +6,17 @@
         Nesse exercicio você vai usar a function e if e else juntos.
 */
 function notaAnual(nota1, nota2, nota3){
-    return parseInt((nota1 + nota2 + nota3) / 3);
+    return Math.floor((nota1 + nota2 + nota3) / 3);
 }
 
-let resultfinal = notaAnual(5,10,7);
+let resultFinal = notaAnual(5,10,7);
 
-if (resultfinal >= 7){
-    console.log("Aluno Aprovado");
-}else if (resultfinal >= 5 && resultfinal < 7){
-    console.log("Aluno em recuperação");
+if (resultFinal >= 7){
+    console.log("aluno aprovado");
+}else if(resultFinal >= 5 && resultFinal < 7){
+    console.log("aluno em recuperação");
 }else{
-    console.log("Aluno reprovado");
+    console.log("aluno reprovado");
 }
 
 /* 
@@ -29,44 +29,5 @@ if (resultfinal >= 7){
         Nesse exercicio você vai usar a function e switch juntos.
 */
 
-function mesAno(numero) {
 
-    switch (numero) {
-        case 01:
-            // return "Janeiro"
-            console.log("Janeiro");
-            break;
-        case 02:
-            console.log("Fevereiro");
-            break;
-        case 03:
-            console.log("Março");
-            break;
-        case 04:
-            console.log("Abril");
-            break;
-        case 05:
-            console.log("Maio");
-            break;
-        case 06:
-            console.log("Junho");
-            break;
-        case 07:
-            console.log("Julho");
-            break;
-        case 08:
-            console.log("Agosto");
-            break;
-        case 09:
-            console.log("Setembro");
-            break;
-        case 10:
-            console.log("Outubro");
-            break;
-        default: console.log("Não é um mês");
-    }
-
-}
-
-
-console.log(mesAno(10))
+// não consegui fazer ess

@@ -13,5 +13,3 @@ Obs:
 ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existem muitas outros.
 
 */
-let retornoMoedas = 798%5 // 3
-let retornoNotas = 798/5 // 159
