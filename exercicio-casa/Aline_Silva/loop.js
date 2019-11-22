@@ -34,9 +34,35 @@ for(i = 1; i <= 5; i++){
     '9 x 10 = 90'
     '10 x 10 = 100'
 */
-for
+for(let i = 1; i <= 10; i++){
+    console.log(`${i} * 10 = ${i * 10}`)
+}
 
 /* 
  3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.
 
 */
+
+let diaDaSemana = "quarta-feira"
+
+switch(diaDaSemana){
+    case "segunda-feira":
+        console.log("Segunda-feira");
+    break;
+    case "terça-feira":
+        console.log("Terça-feira");
+    break;
+    case "quarta-feira":
+        console.log("Quarta-feira");
+    break;
+    case "quinta-feira":
+        console.log("quinta-feira");
+    break;
+    case "sexta-feira":
+        console.log("sexta-feira");
+    break;
+    case "sábado":
+        console.log("Sábado");
+    break;
+    default: console.log("Não é um dia da semana");
+}
