@@ -6,6 +6,25 @@
         Nesse exercicio você vai usar a function e if e else juntos.
 */
 
+function notaAnual(nota1, nota2, nota3){
+    return parseInt((nota1 + nota2 + nota3) / 3);
+}
+
+let resultFinal = notaAnual(6,8,5);
+
+if (resultFinal >= 7){
+    console.log('Aluno aprovado');
+}else if (resultFinal >= 5 && resultFinal < 7){
+    console.log('Aluno em recuperação');
+}else{
+    console.log('Aluno reprovado');
+}
+ 
+Aluno em recuperação
+
+
+
+
 /* 
     2.  Crie uma função que converta o número do mês do ano pelo seu nome. 
         Por exemplo:

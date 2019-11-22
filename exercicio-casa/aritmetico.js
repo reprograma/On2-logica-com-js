@@ -13,3 +13,6 @@ Obs:
 ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existem muitas outros.
 
 */
+
+
+
