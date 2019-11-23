@@ -13,3 +13,8 @@ Obs:
 ParseInt é uma conversão para inteiros que joga fora a parte decimal  e existem muitas outros.
 
 */
+
+let dinheiro= 798;
+let notas= parseInt(798/5);
+let moedas= 798%5;
+console.log(notas, moedas);
