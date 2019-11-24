@@ -9,6 +9,13 @@
     '#####'
 */
 
+let andares = "#";
+
+for(let i = 1; i <= 5; i++){
+    console.log(andares)
+    andares = andares + "#"
+}
+
 /*
  2. Faça a taboada do 10 utilizando um dos seguintes loops for, while, ou do while.
     Exemplo:
@@ -24,6 +31,35 @@
     '10 x 10 = 100'
 */
 
+for(let B = 1; B <= 10; B++){
+    console.log(`${B} * 10 = ${B*10}`)
+}
+
 /* 
- 3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.
+ 3. Faça um SWITCH para achar o dia da semana quarta-feira, ressaltando que deve constar no seu código todos os dias da semana.
+
 */
+
+let diaDaSemana = "quarta-feira";
+
+switch(diaDaSemana){
+    case "segunda-feira":
+        console.log("Segunda-Feira");
+    break;
+    case "terça-feira":
+        console.log("Terça-Feira");
+    break;
+    case "quarta-feira":
+        console.log("Quarta-Feira");
+    break;
+    case "quinta-feira":
+        console.log("Quinta-Feira");
+    break;
+    case "sexta-feira":
+        console.log("Segunda-Feira");
+    break;
+    case "sabado-feira":
+        console.log("Sabado-Feira");
+    break;
+    default: console.log("Não é um dia da semana");
+}
