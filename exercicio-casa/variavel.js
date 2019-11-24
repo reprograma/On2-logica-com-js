@@ -2,18 +2,14 @@
    1. Crie as varias citadas abaixo, complentadno com suas informações e print no console.log seu retorno. 
     
         nome, profissão, escolaridade, estado, cidade
-
     Dica: let IDENTIFICADOR = ATRIBUTO
-
 */
 
 /*  
     2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
-
         Dica: IDENTIFICADOR = ATRIBUTO
     
     obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
-
 */
 
 
@@ -22,14 +18,12 @@
     
         Variavel A = 10
         Variavel B = 20
-
     Troque o valor de A para B e valor de B para A.
 */
 
 
 /*  
     4. Escreva:
-
         variavel A = 10
         variavel B = 20
         Mostre o valor de B
@@ -40,7 +34,6 @@
 
 /*  
     5. Escreva:
-
         variavel A = 30
         variavel B = 20
         variavel C = A + B
@@ -53,7 +46,6 @@
 
 /*  
     6. Escreva:
-
         variavel A = 10
         variavel B = 20
         variavel C = A 
@@ -65,7 +57,6 @@
 
 /*  
     7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.
-
     Responda:
     Essa operação funcionou ? justifique
 */

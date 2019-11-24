@@ -1,21 +1,17 @@
 /*
 1.  Desenhe uma escada 5 andares, utilizando  um dos seguintes tipos de loop: for, do while ou while.
     Utilize a string para passar dentro um caractere, para desenhar a escada.
-
     Exemplo:
     '#'
     '##'
     '###'
     '####'
     '#####'
-
 */
 
 /*
  2. Faça a taboada do 10 utilizando um dos seguintes loops for, while, ou do while.
-
     Exemplo:
-
     '1 x 10 = 10'
     '2 x 10 = 20'
     '3 x 10 = 30'
@@ -30,5 +26,4 @@
 
 /* 
  3. Faça um SWITCH para achar o dia da semana quirta-feira, resaltando que deve constar no seu código todos os dias da semana.
-
 */
