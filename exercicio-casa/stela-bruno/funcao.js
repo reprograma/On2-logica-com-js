@@ -1,20 +1,17 @@
 /* 
     1.  Crie uma função que receba três notas como parâmetro e retorne a média, indicando 
         se a pessoa passou ou se foi reprovada;
+
         Dica:
         Nesse exercicio você vai usar a function e if e else juntos.
 */
-function notaAnual(nota1, nota2, nota3){
+function notaAnual(nota1, nota2, nota3) {
     return parseInt((nota1 + nota2 + nota3) / 3);
 }
-
-let resultfinal = notaAnual(5,10,7);
-
-if (resultfinal >= 7){
-    console.log("Aluno Aprovado");
-}else if (resultfinal >= 5 && resultfinal < 7){
-    console.log("Aluno em recuperação");
-}else{
+let resultFinal = notaAnual(5, 10, 7);
+if (resultFinal >= 7) {
+    console.log("Aluno aprovado");
+} else {
     console.log("Aluno reprovado");
 }
 
@@ -23,48 +20,52 @@ if (resultfinal >= 7){
         Por exemplo:
         Digite 07
         retorne: Julho
+
         Dica:
         Nesse exercicio você vai usar a function e switch juntos.
 */
-
-function mesAno(numero) {
-
+function mesDoAno(numero) {
     switch (numero) {
         case 01:
-            // return "Janeiro"
-            console.log("Janeiro");
+            console.log("Janeiro")
             break;
         case 02:
-            console.log("Fevereiro");
+            console.log("Fevereiro")
             break;
         case 03:
-            console.log("Março");
+            console.log("Março")
             break;
         case 04:
-            console.log("Abril");
+            console.log("Abril")
             break;
         case 05:
-            console.log("Maio");
+            console.log("Maio")
             break;
         case 06:
-            console.log("Junho");
+            console.log("Junho")
             break;
         case 07:
-            console.log("Julho");
+            console.log("Julho")
             break;
         case 08:
-            console.log("Agosto");
+            console.log("Agosto")
             break;
         case 09:
-            console.log("Setembro");
+            console.log("Setembro")
             break;
         case 10:
-            console.log("Outubro");
+            console.log("Outubro")
             break;
-        default: console.log("Não é um mês");
+        case 11:
+            console.log("Novembro")
+            break;
+        case 12:
+            console.log("Dezembro")
+            break;
+        default:
+            console.log("Não é um mês")
+            break;
     }
 
 }
 
-
-console.log(mesAno(10))

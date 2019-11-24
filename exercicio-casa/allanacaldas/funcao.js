@@ -4,11 +4,12 @@
         Dica:
         Nesse exercicio você vai usar a function e if e else juntos.
 */
-function notaAnual(nota1, nota2, nota3){
-    return parseInt((nota1 + nota2 + nota3) / 3);
+
+function NotaAnual(num1, num2, num3){
+    return ((num1 + num2 + num3) / 3);
 }
 
-let resultfinal = notaAnual(5,10,7);
+let resultfinal = NotaAnual(3,2,7);
 
 if (resultfinal >= 7){
     console.log("Aluno Aprovado");
@@ -17,6 +18,12 @@ if (resultfinal >= 7){
 }else{
     console.log("Aluno reprovado");
 }
+
+Aluno reprovado
+
+console.log (resultfinal)
+4
+
 
 /* 
     2.  Crie uma função que converta o número do mês do ano pelo seu nome. 
@@ -27,11 +34,10 @@ if (resultfinal >= 7){
         Nesse exercicio você vai usar a function e switch juntos.
 */
 
-function mesAno(numero) {
+function MesDoAno(numerodomes) {
 
-    switch (numero) {
+    switch (numerodomes) {
         case 01:
-            // return "Janeiro"
             console.log("Janeiro");
             break;
         case 02:
@@ -67,4 +73,4 @@ function mesAno(numero) {
 }
 
 
-console.log(mesAno(10))
+console.log(MesDoAno(08))

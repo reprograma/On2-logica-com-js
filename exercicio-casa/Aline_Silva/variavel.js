@@ -1,42 +1,46 @@
 /*  
-   1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno. 
+   1. Crie as varias citadas abaixo, complentadno com suas informações e print no console.log seu retorno. 
     
         nome, profissão, escolaridade, estado, cidade
+
     Dica: let IDENTIFICADOR = ATRIBUTO
+
 */
 
-let nome = "Isabela";
-let profissao = "DEV";
-let escolaridade = "Cursando ensino superior";
+let nome = "Aline";
+let profissao = "Administradora";
+let escolaridade = "Superior Completo";
 let estado = "São Paulo";
-let cidade = "São Paulo";
+let cidade = "Indaiatuba";
 
-// console.log(`${nome} ${profissao}, está morando atualmente na cidade de ${cidade} `);
-console.log(nome,profissao,escolaridade,estado,cidade);
-
+console.log(nome, profissao, escolaridade, estado, cidade)
 
 /*  
     2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
+
         Dica: IDENTIFICADOR = ATRIBUTO
     
     obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
+
 */
 
-nome = "Maria";
-profissao = "professora";
-escolaridade = "cursinho";
-cidade = "Rio de janeiro";
-estado = "Rio de janeiro";
+nome = "Isabela";
+profissao = "Desenvolvedora"
+escolaridade = "Superior Cursando"
+estado = "Paraná"
+cidade = "Limeira"
 
-console.log(nome, profissao, escolaridade,cidade,estado);
+console.log(nome, profissao, escolaridade, estado, cidade)
 
 /*  
     3. Trabalhando variavel e logica, escreva:
     
         Variavel A = 10
         Variavel B = 20
+
     Troque o valor de A para B e valor de B para A.
 */
+
 let A = 10;
 let B = 20;
 let C = A;
@@ -46,6 +50,7 @@ console.log(A,B)
 
 /*  
     4. Escreva:
+
         variavel A = 10
         variavel B = 20
         Mostre o valor de B
@@ -55,12 +60,13 @@ console.log(A,B)
 
 let A = 10;
 let B = 20;
-console.log(B); // 5
+console.log(B);
 B = 5;
-console.log(A,B) // 10 5
+console.log(A,B)
 
 /*  
     5. Escreva:
+
         variavel A = 30
         variavel B = 20
         variavel C = A + B
@@ -69,18 +75,17 @@ console.log(A,B) // 10 5
         veriavel C = A + B
         Mostre A,B,C
 */
-
 let A = 30;
 let B = 20;
 let C = A + B;
-console.log(C); // 50
+console.log(C);
 B = 10;
 C = A + B;
-console.log(A,B,C) // 30 10 40
-
+console.log(A,B,C)
 
 /*  
     6. Escreva:
+
         variavel A = 10
         variavel B = 20
         variavel C = A 
@@ -88,31 +93,30 @@ console.log(A,B,C) // 30 10 40
         veriavel A = B
         Mostre A,B,C
 */
-
 let A = 10;
 let B = 20;
 let C = A;
-B = C;
-A = B;
+let B = C;
+let A = B;
 
-console.log(A,B,C); // 10 10 10
+console.log(A,B,C);
+
 
 /*  
     7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.
+
     Responda:
     Essa operação funcionou ? justifique
 */
-
 const A = 100;
 A = 80;
 
-// Resposta: Não conseguimos alterar o valor da constante, pois seu proposito é não ser alterado durante a execução do programa.
+// Não podemos mudar porque CONSTANTE é um valor fixo;
 
 /*  
     8. Um programa recebe um VALOR MONETÁRIO, e aplica uma TAXA de juros FIXA de 3% e no final apresenta o VALOR com a taxa aplicada. 
     Onde usariamos varáveis, constante e console?
 */
-
 let valorMonetario = 100;
 const taxaJuros = 1.03;
 let valorFinal = valorMonetario * taxaJuros;
