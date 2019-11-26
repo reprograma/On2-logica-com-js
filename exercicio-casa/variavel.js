@@ -2,25 +2,21 @@
    1. Crie as varias citadas abaixo, complentando com suas informações e print no console.log seu retorno. 
     
         nome, profissão, escolaridade, estado, cidade
-
     Dica: let IDENTIFICADOR = ATRIBUTO
 */
 
+let nome = "Isabela";
+let profissao = "DEV";
+let escolaridade = "Cursando ensino superior";
+let estado = "São Paulo";
+let cidade = "São Paulo";
 
-
-let nome = "Jessica";
-let profissao = "Dev";
-let escolaridade = "Ensino Superior";
-let estado = "Rio de Janeiro";
-let cidade = "Rio de Janeiro";
-
+// console.log(`${nome} ${profissao}, está morando atualmente na cidade de ${cidade} `);
 console.log(nome,profissao,escolaridade,estado,cidade);
-
 
 
 /*  
     2. Com as variaveis criadas, substitua os valores já definidos por valores diferentes atribuidos a elas.
-
         Dica: IDENTIFICADOR = ATRIBUTO
     
     obs: Lembrando que queremos substituir o valor atribuido, portanto, não é necessario declarar a variavel novamente. 
@@ -28,18 +24,17 @@ console.log(nome,profissao,escolaridade,estado,cidade);
 
 nome = "Maria";
 profissao = "professora";
-escolaridade = "Mestrado";
-estado = "Sao paulo";
-cidade = "Sao paulo";
+escolaridade = "cursinho";
+cidade = "Rio de janeiro";
+estado = "Rio de janeiro";
 
-console.log(nome,profissao,escolaridade,estado,cidade);
+console.log(nome, profissao, escolaridade,cidade,estado);
 
 /*  
     3. Trabalhando variavel e logica, escreva:
     
         Variavel A = 10
         Variavel B = 20
-
     Troque o valor de A para B e valor de B para A.
 */
 let A = 10;
@@ -51,7 +46,6 @@ console.log(A,B)
 
 /*  
     4. Escreva:
-
         variavel A = 10
         variavel B = 20
         Mostre o valor de B
@@ -63,11 +57,10 @@ let A = 10;
 let B = 20;
 console.log(B); // 5
 B = 5;
-console.log(A,B); // 10 5
+console.log(A,B) // 10 5
 
 /*  
     5. Escreva:
-
         variavel A = 30
         variavel B = 20
         variavel C = A + B
@@ -79,16 +72,15 @@ console.log(A,B); // 10 5
 
 let A = 30;
 let B = 20;
-let C =  A + B;
+let C = A + B;
 console.log(C); // 50
 B = 10;
 C = A + B;
-console.log(A,B,C); // 30 10 40
+console.log(A,B,C) // 30 10 40
 
 
 /*  
     6. Escreva:
-
         variavel A = 10
         variavel B = 20
         variavel C = A 
@@ -107,7 +99,6 @@ console.log(A,B,C); // 10 10 10
 
 /*  
     7. Crie uma constante A que armazene um valor de 100 e troque o valor de A para 80.
-
     Responda:
     Essa operação funcionou ? justifique
 */

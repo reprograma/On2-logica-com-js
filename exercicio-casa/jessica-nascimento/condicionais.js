@@ -39,26 +39,36 @@
 
 */
 
+
+
+
+// primeiro exercicio (1)
+let idade = 19
+if(idade >=18){console.log("Autorizado")}
+else{console.log("Não autorizado")}
+
+// segundo exercicio (2)
+let idade = 25
+
+
+if(idade <=18){console.log("Criança/Adolescente")}
+
+else if(idade > 18 && idade <= 60){console.log("Adulto")}
+
+else{console.log("Idoso")}
+
+// terceiro exercicio (3)
+let peso = 80
+
 let altura = 1.72
-let peso = 65
 
-let quadrado = (altura * altura);
+let imc = peso / (altura * altura)
 
-let calculo = Math.floor(peso/quadrado);
 
-if(calculo<18.5){
-    console.log("Você está magro com esse indice: " + calculo);
-}
-else if(calculo>=18.5 && calculo<24.9){
-    console.log("Você está normal com esse indice: " + calculo);
-}
+if(imc <=18.5){console.log("Abaixo do peso normal")}
 
-else if(calculo>=25 && calculo<29.9) {
-    console.log("Você está com sobre peso com esse indice: " + calculo);
-}
-else if(calculo>=30 && calculo<39.9) {
-    console.log("Você está com obesidade com esse indice: " + calculo);
-}
-else{
-    console.log("Você estácom obesidade grave com esse indice: " + calculo);
-}
+else if(imc >18.5 && imc <=25){console.log("Peso normal")}
+
+else if(imc > 25 && imc <=30){console.log("Acima do peso normal")}
+
+else{console.log("Obesidade")}
