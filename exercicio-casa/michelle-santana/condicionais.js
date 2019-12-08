@@ -27,7 +27,7 @@ if ( idade<=18) {console.log("criança/adolescente")}else if (18<idade<=60) {con
     3. Calculo IMC
 
     Crie uma variavel receba  peso em kg, uma variavel que receba altura em metros. 
-    Faça as comparações necessarias usando if e else if e else, para determinar qual a interpretação do IMC atual.
+    Faça as comparações necessarias usando if e else if e els, para determinar qual a interpretação do IMC atual.
 
     IMC  / Interpretação
 
@@ -53,26 +53,3 @@ else if (imc>18.5 && imc<=25.0) {console.log("peso normal")}
 else if ( imc>25 && imc<=30.0) {console.log ("acima do peso normal")}
 else {console.log( "obesidade")};
 
-let altura = 1.72
-let peso = 65
-
-let quadrado = (altura * altura);
-
-let calculo = Math.floor(peso/quadrado);
-
-if(calculo<18.5){
-    console.log("Você está magro com esse indice: " + calculo);
-}
-else if(calculo>=18.5 && calculo<24.9){
-    console.log("Você está normal com esse indice: " + calculo);
-}
-
-else if(calculo>=25 && calculo<29.9) {
-    console.log("Você está com sobre peso com esse indice: " + calculo);
-}
-else if(calculo>=30 && calculo<39.9) {
-    console.log("Você está com obesidade com esse indice: " + calculo);
-}
-else{
-    console.log("Você estácom obesidade grave com esse indice: " + calculo);
-}

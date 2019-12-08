@@ -18,6 +18,15 @@ if (resultfinal >= 7){
     console.log("Aluno reprovado");
 }
 
+let resultNotaAnual = notaAnual(5, 10, 7)
+
+if (resultNotaAnual >= 7) {
+    console.log("Aluno Aprovado")
+} else if (resultNotaAnual >= 5 && resultNotaAnual < 7) {
+    console.log("Aluno em recuperação");
+} else {
+    console.log("Aluno reprovado");
+
 /* 
     2.  Crie uma função que converta o número do mês do ano pelo seu nome. 
         Por exemplo:
@@ -65,6 +74,5 @@ function mesAno(numero) {
     }
 
 }
-
 
 console.log(mesAno(10))
