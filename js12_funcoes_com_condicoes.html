@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinando funciones con  condiciones</title>
+</head>
+<body>
+    <script>
+
+        function mensaje_final(nota) { // FUNCION LLAMASE MENSAJE_FINAL Y TIENE ENTRADA UNA NOTA
+
+        switch (nota) {
+            case 'A':
+            return "muy bien";          // QUANDO VOCẼ USA RETURN VC DIZ QUE PODE GUARDAR O VALOR EM UMA VARIÁVEL, NO CASO, GUARDA 'muy bien'       
+                break;
+        
+            case 'B':
+            return "bien";
+                break;
+            
+            case 'C':
+            return "necesitas mejorar"; 
+                break;
+
+            default:
+            return "não sei o que dizer";
+                break;
+        }
+        }
+
+        var resultado = mensaje_final('A');
+     
+        console.log(resultado);
+
+        
+        
+        function apresentacao_pessoa(nombre, genero) {
+            
+            genero = prompt("ingresse el genero: M o F");
+            nombre = prompt("ingresse el nombre");
+            
+                if(genero == 'M')
+                return 'Sr' + ' ' + nombre;
+
+                if(genero == 'F')
+                return 'Sra' + ' ' +nombre;
+
+                if(genero != 'F' && genero != 'M' )
+                return 'quizas sea LGBTQ+';
+
+
+
+        }  
+
+        console.log(apresentacao_pessoa('nombre', 'genero'));
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1, nota2, nota3, media;
+
+        nota1=parseInt(prompt("ingresse a nota do primeiro trimestre:"));
+        nota2=parseInt(prompt("ingresse a nota do segundo trimestre:"));
+        nota3=parseInt(prompt("ingresse a nota do terceiro trimestre:"));
+        media=nota1, nota2, nota3/3;
+        
+        alert("a media é ="+media);
+        
+        if (media >= 7) {
+				document.write("Parabéns, você está aprovado, aproveite suas férias!");
+			} else {
+				if (media < 7) {
+                    document.write ("Reprovado");
+                    recuperar=prompt("Deseja fazer recuperação? Responda N ou S")
+
+                    if (recuperar == "N") {
+                        document.write("Que pena, te vejo ano que vem");
+                        
+                    } else { recuperar  == "S";
+                        document.write("Ótimo, as aulas de recuperação começam semana que vem!")
+                        
+                    }
+                
+                }
+            }
+        
+
+        
+    </script>
+
+</body>
+</html>
