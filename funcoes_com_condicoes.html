@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Switch Case</title>
+</head>
+<body>
+
+        <!-- Neste caso, não precisa declarar variável pois a função já faz isso-->
+    <script>
+
+        function mensaje_final(nota) {
+            
+
+            nota = prompt("ingresse a nota: A, B ou c");
+
+            switch (nota) {
+                case 'A': 
+                return 'muy bien';     // ao retornar um valor significa que você pode guardá-lo em una variável.       
+                    break;
+            
+                case 'B':
+                return 'bien';
+                    break;
+                
+                case 'C': 
+                return 'necesitas mejorar';
+                
+                default:
+                return 'não sei o que dizer';
+                    break;
+        }
+        
+        }
+
+         var resultado = mensaje_final('A');
+         console.log(resultado);
+
+    </script>
+</body>
+</html>
